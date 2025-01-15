@@ -1,0 +1,104 @@
+.chatlist {
+    flex: 1;
+    overflow: auto;
+    
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+
+        .searchbar {
+            flex: 1;
+            background-color: rgb(159, 211, 199, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-radius: 15px;      
+            width: 30px;
+            height: 30px;
+
+            input {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: #ececec;
+                flex: 1;
+            }
+
+            input::placeholder {
+                color: #ececec;
+            }
+
+            .img {
+                width: 20px;
+                height: 20px;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+        }
+
+        .add {
+            width: 25px;
+            height: 25px;
+            font-size: 0;
+            background-color: rgb(159, 211, 199, 0.5);
+            padding: 0;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .add svg {
+            width: 20px; 
+            height: 20px;
+            color: #ececec; 
+        }
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid #dddddd35;
+
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            span {
+                font-weight: 500;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+.chatlist::-webkit-scrollbar {
+    width: 8px;
+}    
+
+.chatlist::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.chatlist::-webkit-scrollbar-thumb {
+    background-color: rgb(165, 165, 165, 0.5);
+    border-radius: 10px;
+}
